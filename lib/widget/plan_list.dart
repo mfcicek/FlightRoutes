@@ -1,4 +1,4 @@
-import 'package:flight/plan.dart';
+import 'package:flight/models/plan.dart';
 import 'package:flutter/material.dart';
 
 class PlansList extends StatelessWidget {
@@ -55,7 +55,6 @@ class PlansList extends StatelessWidget {
                 buildDetailButton(),
               ],
             ));
-        //return Text(plans[index].fromName);
       },
     );
   }
@@ -95,9 +94,7 @@ class PlansList extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(primary: Colors.blue[900]),
       child: Text("detaylar", style: TextStyle(fontSize: 15)),
-      onPressed: () {
-        // Navigator.push(context, MaterialPageRoute(builder: (contex) => MyApp()));
-      },
+      onPressed: () {},
     );
   }
 }
